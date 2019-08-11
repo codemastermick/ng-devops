@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - stable
+branches:
+  only:
+    - master # build master branch
+    - /^feat-.*$/ # build feature branches
+install:
+  - npm install -g @angular/cli # install ng cli
+  - npm install # install project dependencies
+before_script:
+  - npm run lintonly || travis_terminate 1 # ensure files pass linting
+script:
+  - npm run build || travis_terminate 1 # build the app
+  - npm run test:ci || travis_terminate 1 # run all tests
