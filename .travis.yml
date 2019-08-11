@@ -8,7 +8,7 @@ install:
 before_script:
   - npm run lintonly || travis_terminate 1 # ensure files pass linting
 script:
-  - npm run build || travis_terminate 1 # build the app
+  - npm run build:prod || travis_terminate 1 # build the app
   - npm run test:ci || travis_terminate 1 # run all tests
 after_success:
   - npm run coverage # upload coverage results to Codacy
