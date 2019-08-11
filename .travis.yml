@@ -16,6 +16,8 @@ script:
   - npm run build:prod || travis_terminate 1 # build the app
   - npm run test:ci || travis_terminate 1 # run all tests
 after_success:
+  - .travis/generate_changelog.sh
+  - .travis/push.sh
   - npm run coverage # upload coverage results to Codacy
   - codecov # upload coverage results to Codecov
   - rm rf coverage # remove coverage directory before deploying
