@@ -16,4 +16,4 @@ script:
 after_success:
   - npm run coverage # upload coverage results to Codacy
   - codecov # upload coverage results to Codecov
-  - /cc-test-reporter format-coverage --prefix coverage/ng-devops after-build --exit-code $TRAVIS_TEST_RESULT # upload coverage results to Code Climate
+  - ./cc-test-reporter format-coverage --prefix coverage/ng-devops after-build --exit-code $TRAVIS_TEST_RESULT # upload coverage results to Code Climate
