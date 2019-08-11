@@ -25,7 +25,7 @@ after_success:
   - npm run coverage # upload coverage results to Codacy
   - codecov # upload coverage results to Codecov
   - rm rf coverage # remove coverage directory before deploying
-  - npm run semantic-release # release a new version semantically
+  - semantic-release # release a new version semantically
 deploy: # on success, deploy to Firebase hosting
   skip_cleanup: true
   provider: firebase
