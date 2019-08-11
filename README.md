@@ -5,7 +5,7 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b091e9b3211a491bbf949b60dcf2011a)](https://www.codacy.com/app/codemastermick/ng-devops?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=codemastermick/ng-devops&amp;utm_campaign=Badge_Grade)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d17298f06631349f0f8c/maintainability)](https://codeclimate.com/github/codemastermick/ng-devops/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/d17298f06631349f0f8c/test_coverage)](https://codeclimate.com/github/codemastermick/ng-devops/test_coverage) [![Greenkeeper badge](https://badges.greenkeeper.io/codemastermick/ng-devops.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/codemastermick/ng-devops.svg)](https://greenkeeper.io/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
 

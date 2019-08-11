@@ -5,9 +5,6 @@ install:
   - npm install -g @angular/cli # install ng cli
   - npm install codecov -g # install codecov uploader
   - npm install # install project dependencies
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter # get Code Climate uploader
-  - chmod +x ./cc-test-reporter # make script executable
-  - ./cc-test-reporter before-build # notify Code Climate of incoming results
 before_script:
   - npm run lintonly || travis_terminate 1 # ensure files pass linting
 script:
@@ -16,4 +13,3 @@ script:
 after_success:
   - npm run coverage # upload coverage results to Codacy
   - codecov # upload coverage results to Codecov
-  - ./cc-test-reporter format-coverage --prefix coverage/ng-devops after-build --exit-code $TRAVIS_TEST_RESULT # upload coverage results to Code Climate
