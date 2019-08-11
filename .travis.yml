@@ -5,7 +5,9 @@ install:
   - npm install -g @angular/cli # install ng cli
   - npm install codecov -g # install codecov uploader
   - npm install # install project dependencies
+  - chmod +x .travis/skip_on_readme.sh
 before_script:
+  - .travis/skip_on_readme.sh || travis_terminate 1
   - npm run lintonly || travis_terminate 1 # ensure files pass linting
 script:
   - npm run build:prod || travis_terminate 1 # build the app
