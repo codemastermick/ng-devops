@@ -1,7 +1,6 @@
 # NgDevops
 
 ![Travis (.org)](https://img.shields.io/travis/codemastermick/ng-devops)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/b091e9b3211a491bbf949b60dcf2011a)](https://www.codacy.com/app/codemastermick/ng-devops?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=codemastermick/ng-devops&amp;utm_campaign=Badge_Coverage)
 [![codecov](https://codecov.io/gh/codemastermick/ng-devops/branch/master/graph/badge.svg)](https://codecov.io/gh/codemastermick/ng-devops)
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b091e9b3211a491bbf949b60dcf2011a)](https://www.codacy.com/app/codemastermick/ng-devops?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=codemastermick/ng-devops&amp;utm_campaign=Badge_Grade)
