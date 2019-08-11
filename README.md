@@ -1,6 +1,6 @@
-# NgDevops
+# ng devops
 
-![Travis (.org)](https://img.shields.io/travis/codemastermick/ng-devops)
+[![Travis (.org)](https://img.shields.io/travis/codemastermick/ng-devops)](https://travis-ci.org/codemastermick/ng-devops)
 [![Website](https://img.shields.io/website/http/dev-profile-cd9ed.web.app?down_color=red&down_message=offline&up_message=up)](https://dev-profile-cd9ed.web.app)
 
 [![codecov](https://codecov.io/gh/codemastermick/ng-devops/branch/master/graph/badge.svg)](https://codecov.io/gh/codemastermick/ng-devops)
@@ -8,9 +8,10 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/d17298f06631349f0f8c/maintainability)](https://codeclimate.com/github/codemastermick/ng-devops/maintainability)
 [![Greenkeeper badge](https://badges.greenkeeper.io/codemastermick/ng-devops.svg)](https://greenkeeper.io/)
 
-This project is an Angular 8 app with a focus on making the actual development easier by leaving all the menial tasks to clever npm scripts, git hooks and Travis CI
+This project is an Angular 8 app with a focus on making the actual development process easier by leaving all the menial tasks to clever scripts, git hooks and Travis CI
 
 ## Getting Started
+
 To get started with this project you will need to do a few things first to enable all the features of the CI pipeline. For a more detailed explanation of the steps you can check the wiki out on [First Steps](https://github.com/codemastermick/ng-devops/wiki/First-Steps).
 
 Create an account with Travis CI if you don't have one, then enable this repository to get started with the basic pipeline.
