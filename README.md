@@ -50,5 +50,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 Travis will automatically deploy successful builds on the master branch to Firebase hosting once the token is added to Travis's environment variables as FIREBASE_TOKEN. To obtain this token, cd into the project directory and use `firebase login:ci` to start the process. Once you have finished logging in and have returned to the command line you will see a long string displayed that you can copy into Travis as FIREBASE_TOKEN.
 
-**Please note that this token should be kept secure and therefore should either be added directly through the web interface or using travis encrypt then adding it to your travis.yml file**
-
+### Please note that this token should be kept secure and therefore should either be added directly through the web interface or using travis encrypt then adding it to your travis.yml file
