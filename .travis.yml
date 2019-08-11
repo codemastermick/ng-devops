@@ -4,6 +4,7 @@ node_js:
 before_install:
   - chmod +x .travis/exec_all.sh
   - .travis/exec_all.sh
+  - .travis/github_login.sh
 install:
   - npm install -g @angular/cli # install ng cli
   - npm install codecov -g # install codecov uploader
