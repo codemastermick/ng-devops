@@ -2,10 +2,7 @@ language: node_js
 node_js:
   - stable # ensures we are always on the latest stable for testing
 before_install:
-  - for filename in .travis/*.sh; do \
-    echo "Setting $filename as executable" \
-    chmod +x "$filename" \
-    done # sets all scripts in .travis as executable
+  - for filename in .travis/*.sh; do echo "Setting $filename as executable" chmod +x "$filename" done # sets all scripts in .travis as executable
 install:
   - npm install -g @angular/cli # install ng cli
   - npm install codecov -g # install codecov uploader
