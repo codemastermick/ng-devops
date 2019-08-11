@@ -1,5 +1,7 @@
 # NgDevops
 
+![Travis (.org)](https://img.shields.io/travis/codemastermick/ng-devops)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
 
 ## Development server
