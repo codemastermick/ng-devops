@@ -13,3 +13,8 @@ script:
 after_success:
   - npm run coverage # upload coverage results to Codacy
   - codecov # upload coverage results to Codecov
+deploy:
+  skip_cleanup: true
+  provider: firebase
+  token:
+    secure: $FIREBASE_TOKEN
