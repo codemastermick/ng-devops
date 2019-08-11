@@ -1,11 +1,6 @@
 language: node_js
 node_js:
   - stable
-branches:
-  only:
-    - master # build master branch
-    - /^greenkeeper/.*$/ # build feature branches
-    - /^feat-.*$/ # build feature branches
 install:
   - npm install -g @angular/cli # install ng cli
   - npm install codecov -g # install codecov uploader
