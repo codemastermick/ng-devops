@@ -2,6 +2,7 @@
 
 [![Travis (.org)](https://img.shields.io/travis/codemastermick/ng-devops)](https://travis-ci.org/codemastermick/ng-devops)
 [![Website](https://img.shields.io/website/http/dev-profile-cd9ed.web.app?down_color=red&down_message=offline&up_message=up)](https://dev-profile-cd9ed.web.app)
+[![GitHub issues](https://img.shields.io/github/issues/codemastermick/ng-devops)](https://github.com/codemastermick/ng-devops/issues)
 
 [![codecov](https://codecov.io/gh/codemastermick/ng-devops/branch/master/graph/badge.svg)](https://codecov.io/gh/codemastermick/ng-devops)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b091e9b3211a491bbf949b60dcf2011a)](https://www.codacy.com/app/codemastermick/ng-devops?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=codemastermick/ng-devops&amp;utm_campaign=Badge_Grade)
