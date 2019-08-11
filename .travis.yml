@@ -1,7 +1,7 @@
 language: node_js
 cache:
   directories:
-  - node_modules
+    - node_modules
 node_js:
   - stable # ensures we are always on the latest stable for testing
 before_install:
@@ -25,7 +25,6 @@ after_success:
   - npm run coverage # upload coverage results to Codacy
   - codecov # upload coverage results to Codecov
   - rm rf coverage # remove coverage directory before deploying
-  - semantic-release # release a new version semantically
 deploy: # on success, deploy to Firebase hosting
   skip_cleanup: true
   provider: firebase
@@ -33,3 +32,5 @@ deploy: # on success, deploy to Firebase hosting
     secure: $FIREBASE_TOKEN # using the token you got from firebase login:ci
   on:
     branch: master # if the build was on the master branch
+  script:
+    - semantic-release # release a new version semantically
