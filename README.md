@@ -10,6 +10,17 @@
 
 This project is an Angular 8 app with a focus on making the actual development easier by leaving all the menial tasks to clever npm scripts, git hooks and Travis CI
 
+## Getting Started
+To get started with this project you will need to do a few things first to enable all the features of the CI pipeline. For a more detailed explanation of the steps you can check the wiki out on [First Steps](https://github.com/codemastermick/ng-devops/wiki/First-Steps).
+
+Create an account with Travis CI if you don't have one, then enable this repository to get started with the basic pipeline.
+
+Set up an account with Firebase if you do not already have one, then set up a new project and enable hosting. Copy your firebase login:ci token into Travis using the method of your choice and automatic deployment will be enabled.
+
+Set up an account with Codecov if you do not already have one, then enable this repository on your dashboard. Once everything is set up, grab a copy of your project token and put it into Travis in your usual way. Codecov coverage reports are now enabled.
+
+Set up an account with Codacy if you don't have one, enable this repository, copy the project token into Travis, and you will have Codacy reviewing your coverage reports as well.
+
 ## Development server
 
 Run `npm run start` for a dev server then navigate to `http://localhost:4200/` . The server will automatically reload if you change any of the source files within the app. When this command is run, git fetch and git pull will execute first, then after the server is shut down the project will automatically fix any linting issues.
