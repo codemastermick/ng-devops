@@ -1,0 +1,33 @@
+name: Build and Test Project
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+        os: [ ubuntu-latest, windows-latest]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install dependencies
+      run: |
+         npm install -g @angular/cli
+         npm install
+    - name: Lint project
+      run: |
+         npm run lintonly
+    - name: Build and test Angular app
+      run: |
+        npm run build:prod
+        npm test:headless
+      env:
+        CI: true
