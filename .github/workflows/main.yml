@@ -4,29 +4,24 @@ on: [push]
 
 jobs:
   build:
-
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ ubuntu-latest, windows-latest]
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Test on node ${{ matrix.node_version }} and ${{ matrix.os }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: 10.x
-    - name: Install dependencies
-      run: |
-         npm install -g @angular/cli
-         npm install
-    - name: Lint project
-      run: |
-         npm run lintonly
-    - name: Build and test Angular app
-      run: |
-        npm run build:prod
-        npm test:headless
-      env:
-        CI: true
+      - uses: actions/checkout@v1
+      - name: Test on node 10.x and ubuntu-latest
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+      - name: Install dependencies
+        run: |
+          npm install -g @angular/cli
+          npm install
+      - name: Lint project
+        run: |
+          npm run lintonly
+      - name: Build and test Angular app
+        run: |
+          npm run build:prod
+          npm test:headless
+        env:
+          CI: true
